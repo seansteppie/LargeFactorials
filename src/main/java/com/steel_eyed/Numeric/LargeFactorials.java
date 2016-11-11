@@ -1,6 +1,7 @@
 package com.steel_eyed.Numeric;
 
 import java.math.BigInteger;
+import java.util.Scanner;
 
 /**
  * LargeFactorials
@@ -35,5 +36,12 @@ public class LargeFactorials {
         if( n.equals( BigInteger.ZERO ) )
             return BigInteger.ONE;
         return n.multiply( Factorial( n.subtract( BigInteger.ONE ) ) );
+    }
+
+    public static void main( String[] args ) {
+        System.out.print( "Enter n: " );
+        Scanner in = new Scanner( System.in );
+        int n = in.nextInt();
+        System.out.println( n + "! = " + Factorial( n ) );
     }
 }
