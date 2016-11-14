@@ -26,6 +26,11 @@ import java.util.Scanner;
  * @version 1.0.0        Date: 29/10/16     Initial Version
  */
 public class LargeFactorials {
+    /**
+     * Calculate the factorial of n
+     * @param n int
+     * @return string of result
+     */
     public static String Factorial( int n ) {
         if( n < 0 )
             return null;
